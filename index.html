@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- Последняя компиляция и сжатый CSS -->  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Дополнение к теме -->  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Последняя компиляция и сжатый JavaScript -->  
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="style.css">
+    <title>My portfolio</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-lg-4">
+          <a class="navbar-brand">MyPortfolio</a>
+        </div>
+        <div class="col-md-8 col-lg-8">
+          <nav class="navbar">
+            <ul class="nav navbar-nav navbar-right ul">
+              <li class="li"><a href="#" onclick="clickMe()">About me</a></li>
+              <li class="li"><a target="_blank" href="https://github.com/DardoThief">GitHub</a></li>
+              <li class="li"><a target="_blank" href="https://yadi.sk/i/aAnBKQmL2rBWVg">CV</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Skills<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a>CSS</a></li>
+                  <li><a>HTML</a></li>
+                  <li><a>C/C++</a></li>
+                  <li><a>php</a></li>
+                  <li><a>less</a></li>
+                  <li><a>git</a></li>
+                  <li><a>linux</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <script type="text/javascript">
+      function clickMe() {
+        document.getElementById("aboutme").addEventListener("header-anim");
+      }
+      </script>
+      <div class="about" id="aboutme">
+        <p>Привет! Меня зовут Лиза, и я хочу показать вам свой cайт, где показаны мои навыки. Если заглянуть в код, то можно увидеть:</p>
+        <ul>
+          <li>В создании шапки использовалась система сеток веб-платформы bootstrap</li>
+          <li>Для выпадающего списка пользовалась библиотекой jquery</li>
+          <li>Для такой несложной анимации разобралась в правиле @keyframes</li>
+          <li>Для создания понятного и удобного кода подключила препроцессор less</li>
+          <li>И, конечно же, использовала основные функции языков html и css</li>
+        </ul>
+        <p>Моих знаний немного, но желания узнавать новое - куда больше</p>
+      </div>
+    </div>
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
+</html>
